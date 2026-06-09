@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleFragment">
+
+    <TextView
+        android:id="@+id/yellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="	#fff1ab"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/purple"
+        app:layout_constraintEnd_toStartOf="@+id/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pink"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="	#eeb8ea"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/yellow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/purple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="	#a49df2"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yellow" />
+
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c5d7ff"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/purple"
+        app:layout_constraintTop_toBottomOf="@id/pink" />
+
+    <Button
+        android:id="@+id/browseBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffecfd"
+        android:fontFamily="@font/adlam_display"
+        android:text="Find your pokemons!"
+        android:textColor="#b138a7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/trainerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#f4ecff"
+        android:fontFamily="@font/adlam_display"
+        android:text="Trainer settings"
+        android:textColor="#6a38b1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple"
+        app:layout_constraintEnd_toEndOf="@+id/purple"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ecf6ff"
+        android:fontFamily="@font/adlam_display"
+        android:text="About the app"
+        android:textColor="#385bb1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/purple"
+        app:layout_constraintTop_toBottomOf="@+id/pink"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFAE3"
+        android:fontFamily="@font/adlam_display"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:text="Welcome to the simplest app ever! "
+        android:textAlignment="center"
+        android:textColor="#8a750f"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/browseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yellow"
+        app:layout_constraintTop_toTopOf="@+id/pink"
+        app:srcCompat="@drawable/pokemon1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/trainerBtn"
+        app:layout_constraintEnd_toEndOf="@+id/purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/purple"
+        app:layout_constraintTop_toBottomOf="@+id/pink"
+        app:srcCompat="@drawable/info" />
+
+    <Switch
+        android:id="@+id/mode_switch_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/adlam_display"
+        android:text="Dark Mode"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txt" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintBottom_toBottomOf="@+id/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mode_switch_title"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <TextView
+        android:id="@+id/rate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate us, please :)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="@+id/yellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mode_switch_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
