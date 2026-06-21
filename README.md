@@ -1,4 +1,4 @@
-<h3 align="center">Different screens from the created app:</h3>
+<div margin="auto"><h3>Different screens from the created app:</h3></div>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c79e0048-3144-4350-9752-e887cf724029" width="250" />
